@@ -336,7 +336,152 @@
     </div>
     <div data-silex-type="container" class="editable-style silex-id-1511740413348-1 container-element" data-silex-id="silex-id-1511740413348-1" style="">
         <div data-silex-type="html" class="editable-style silex-id-1511610917181-9 html-element" data-silex-id="silex-id-1511610917181-9" style="">
-            <div class="silex-element-content"></div>
+            <div class="silex-element-content">
+                <style>
+                /* The Modal (background) */
+                    
+                    font: normal 100% "trebuchet ms",
+                    Arial,
+                    Helvetica,
+                    sans-serif;
+                }
+                a {
+                    color: 50% #808080;
+                }
+                A:visited {
+                    color: #005177;
+                }
+                a:hover {
+                    color: #ff0000;
+                }
+                .modal {
+                    display: none;
+                    /* Hidden by default */
+                    
+                    position: fixed;
+                    /* Stay in place */
+                    
+                    z-index: 1;
+                    /* Sit on top */
+                    
+                    padding-top: 100px;
+                    /* Location of the box */
+                    
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    /* Full width */
+                    
+                    height: 100%;
+                    /* Full height */
+                    
+                    overflow: auto;
+                    /* Enable scroll if needed */
+                    
+                    background-color: rgb(0, 0, 0);
+                    /* Fallback color */
+                    
+                    background-color: rgba(0, 0, 0, 0.4);
+                    /* Black w/ opacity */
+                }
+                /* Modal Content */
+                .modal-content {
+                    background-color: #fefefe;
+                    margin: auto;
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 80%;
+                }
+                /* The Close Button */
+                .close {
+                    color: #aaaaaa;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+                .close:hover,
+                .close:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+                li {
+                    cursor: pointer;
+                }
+                </style>
+
+
+
+                <!-- Can type text here  -->
+
+
+                <!-- Trigger/Open The Modal -->
+
+                <a class="button" id="myBtn">
+                    <h4>
+                        <li><u>ลงข้อมูลโดยละเอียด</u></li>
+                    </h4>
+                </a>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">×</span>
+
+
+                        <!-- Can type text here  -->
+
+                        <p>
+
+                            ลงข้อมูลโดยละเอียด
+
+                        </p>
+
+                        <!-- Put Database Code here  -->
+
+                        <script type="text/javascript" src="https://c5cmr260.caspio.com/scripts/embed.js"></script>
+                        <script type="text/javascript">
+                            try{f_cbload(true, "c5cmr260.caspio.com", "c49e5000f42e2efaa29a46b9aeec");}catch(v_e){;}
+                        </script>
+                        <div class="cxkg"><a href="https://c5cmr260.caspio.com/dp.asp?AppKey=c49e5000f42e2efaa29a46b9aeec">Click here</a> to load this Caspio <a href="http://www.caspio.com" target="_blank" title="Cloud Database">Cloud Database</a></div>
+                        <div id="cbc49e5000f42e2efaa29a46b9aeec"><a href="https://www.caspio.com" target="_blank">Cloud Database</a> by Caspio</div>
+
+
+
+                    </div>
+
+                </div>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+                    
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
         </div>
     </div>
     <div data-silex-type="text" class="editable-style text-element silex-id-1511667794329-16" data-silex-id="silex-id-1511667794329-16" style="">
