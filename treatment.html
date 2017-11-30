@@ -431,26 +431,44 @@
     </div>
     <div data-silex-type="container" class="editable-style silex-id-1512033397254-4 container-element" data-silex-id="silex-id-1512033397254-4" style="">
         <div data-silex-type="html" class="editable-style silex-id-1512033588159-5 html-element" data-silex-id="silex-id-1512033588159-5" style="">
-            <div class="silex-element-content"><a href="#openModal1">Box 1</a>
+            <div class="silex-element-content">
+                <div id="modal-window-one" class="modal-window modal">
 
-                <div id="openModal1" class="modalDialog1">
-                    <div>
-                        <a href="#close" title="Close" class="close">X</a>
-                        <h2>Modal Box 1</h2>
-                        <p>This is a sample modal box that can be created using the powers of CSS3. </p>
-                        <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
-                    </div>
-                </div>
-                <a href="#openModal2">Box 2</a>
 
-                <div id="openModal2" class="modalDialog2">
-                    <div>
-                        <a href="#close" title="Close" class="close">X</a>
-                        <h2>Modal Box 2</h2>
-                        <p><strong>Box 2</strong></p>
-                        <p>yadda yadda</p>
+                    <div style="height:320px;width:550px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+
+                        <script type="text/javascript" src="https://c5cmr260.caspio.com/scripts/embed.js"></script>
+                        <script type="text/javascript">
+                            try{f_cbload(true, "c5cmr260.caspio.com", "c49e5000b7773a48b6e24a9198e0");}catch(v_e){;}
+                        </script>
+
                     </div>
+
+
+
+
+
                 </div>
+
+
+                <div id="modal-window-two" class="modal-window modal">
+
+
+                    <script type="text/javascript" src="https://c5cmr260.caspio.com/scripts/embed.js"></script>
+                    <script type="text/javascript">
+                        try{f_cbload(true, "c5cmr260.caspio.com", "c49e50002f1840c4673a4615bc3a");}catch(v_e){;}
+                    </script>
+
+
+
+                </div>
+
+
+                <div class="click-to-open" data-modal="modal-window-one">test 1</div> //will open modal one
+
+                <div class="click-to-open" data-modal="modal-window-two">test 2</div> //will open modal two var btn = document.getElementsByClassName("click-to-open"); for (var i = 0; i &lt; btn.length; i++) { var thisBtn = btn[i]; thisBtn.addEventListener("click", function(){ var modal = document.getElementById(this.dataset.modal);
+                modal.style.display = "block"; }, false);
+
             </div>
         </div>
     </div>
