@@ -432,43 +432,23 @@
     <div data-silex-type="container" class="editable-style silex-id-1512033397254-4 container-element" data-silex-id="silex-id-1512033397254-4" style="">
         <div data-silex-type="html" class="editable-style silex-id-1512033588159-5 html-element" data-silex-id="silex-id-1512033588159-5" style="">
             <div class="silex-element-content">
-                <div id="modal-window-one" class="modal-window modal">
-
-
-                    <div style="height:320px;width:550px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
-
-                        <script type="text/javascript" src="https://c5cmr260.caspio.com/scripts/embed.js"></script>
-                        <script type="text/javascript">
-                            try{f_cbload(true, "c5cmr260.caspio.com", "c49e5000b7773a48b6e24a9198e0");}catch(v_e){;}
-                        </script>
-
+                <div class="modal fade myModal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
                     </div>
-
-
-
-
-
                 </div>
-
-
-                <div id="modal-window-two" class="modal-window modal">
-
-
-                    <script type="text/javascript" src="https://c5cmr260.caspio.com/scripts/embed.js"></script>
-                    <script type="text/javascript">
-                        try{f_cbload(true, "c5cmr260.caspio.com", "c49e50002f1840c4673a4615bc3a");}catch(v_e){;}
-                    </script>
-
-
-
-                </div>
-
-
-                <div class="click-to-open" data-modal="modal-window-one">test 1</div> //will open modal one
-
-                <div class="click-to-open" data-modal="modal-window-two">test 2</div> //will open modal two var btn = document.getElementsByClassName("click-to-open"); for (var i = 0; i &lt; btn.length; i++) { var thisBtn = btn[i]; thisBtn.addEventListener("click", function(){ var modal = document.getElementById(this.dataset.modal);
-                modal.style.display = "block"; }, false);
-
             </div>
         </div>
     </div>
