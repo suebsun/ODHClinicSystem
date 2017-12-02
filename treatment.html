@@ -539,27 +539,25 @@
                         /* 15% from the top and centered */
                         padding: 20px;
                         border: 1px solid #888;
-                        width: 80%;
+                        width: 90%;
                         /* Could be more or less, depending on screen size */
                     }
                     
-                    <!-- %%%%%%%%%%%%%%%%%%%%%%%% ADJUST CONTENT HERE %%%%%%%%%%%%%%%%%%%%%%%%% -->@media (min-width: 1366px) {
+                    @media (min-width: 1366px) {
                         .modal-content {
                             background-color: #fefefe;
                             margin: 10vh auto;
                             /* 15% from the top and centered */
-                            padding: 40px;
+                            padding: 20px;
                             border: 1px solid #888;
-                            width: 80%;
+                            width: 30%;
                             /* Could be more or less, depending on screen size */
                         }
                     }
-                    
-                    <!-- %%%%%%%%%%%%%%%%%%%%%%%% Close %%%%%%%%%%%%%%%%%%%%%%%%% -->
                     /* The Close Button */
                     
                     .close {
-                        color: #aaaaaa;
+                        color: #aaa;
                         float: right;
                         font-size: 28px;
                         font-weight: bold;
@@ -567,7 +565,7 @@
                     
                     .close:hover,
                     .close:focus {
-                        color: #000;
+                        color: black;
                         text-decoration: none;
                         cursor: pointer;
                     }
@@ -577,13 +575,13 @@
                         border-top: none;
                         border-right: none;
                         border-left: none;
-                        border-bottom: #02274a 0px solid;
+                        border-bottom: #02274a 1px solid;
                         padding: 0 0 3px 0;
                         font-size: 16px;
                     }
                     
                     button.button:hover {
-                        border-bottom: #a99567 0px solid;
+                        border-bottom: #a99567 1px solid;
                         color: #a99567;
                     }
                 </style>
@@ -657,20 +655,28 @@
                 <!-- %%%%%%%%%%%%%%%%%%%%%%%% MODAL TWO %%%%%%%%%%%%%%%%%%%%%%%%% -->
 
 
-
-
                 <script>
-                    $(".button").on("click", function() {
-                      var modal = $(this).data("modal");
-                      $(modal).show();
-                    });
-                    
-                    $(".modal").on("click", function(e) {
-                      var className = e.target.className;
-                      if(className === "modal" || className === "close"){
-                        $(this).closest(".modal").hide();
+                    var modalBtns = [...document.querySelectorAll(".button")];
+                    modalBtns.forEach(function(btn){
+                      btn.onclick = function() {
+                        var modal = btn.getAttribute('data-modal');
+                        document.getElementById(modal).style.display = "block";
                       }
                     });
+                    
+                    var closeBtns = [...document.querySelectorAll(".close")];
+                    closeBtns.forEach(function(btn){
+                      btn.onclick = function() {
+                        var modal = btn.closest('.modal');
+                        modal.style.display = "none";
+                      }
+                    });
+                    
+                    window.onclick = function(event) {
+                      if (event.target.className === "modal") {
+                        event.target.style.display = "none";
+                      }
+                    }
                 </script>
             </div>
         </div>
